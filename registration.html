@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png">
+	<link rel="mask-icon" href="img/favicon.png" color="#5bbad5">
+	<link rel="shortcut icon" href="img/favicon.png">
+	<meta name="msapplication-config" content="img/favicon.png">
+	<meta name="theme-color" content="#ffffff">
+
+	<title>Create account</title>
+
+	<!-- CSS Plugin -->
+	<link rel="stylesheet" href="css/registration.css">
+</head>
+
+<body style="background-image: url(img/g-4.jfif);">
+
+    <!-- PROFILE PANEL
+    ================================================== -->
+    <section class="registration" align="center">
+        <div class="registration-main">
+            <div class="registration-description">
+                <h2>Create an account</h2>
+                <p>You can create an aunty jiddah catering account to get news, make 
+                    bookings, and also have access to your own profile page were you can manage 
+                    and customise your account, so fill in the form to get started
+                </p>
+                <div style="display: none;">
+                    <a><button class="registration-button-cancel">Cancel</button></a>
+                    <a><button class="registration-form-button">Continue</button></a>
+                </div>
+            </div>
+            <div class="registration-form" style="display: ;">
+                <form method="POST">
+                    <label for="bookings_form_first_name">First name</label>
+                    <input type="text" id="bookings_form_first_name" placeholder="First name" class="hide"><br>
+                    <label for="bookings_form_last_name">Last name</label>
+                    <input type="text" id="bookings_form_last_name" placeholder="Last name" class="hide"><br>
+                    <label for="bookings_form_username">Username</label>
+                    <input type="text" id="bookings_form_username" placeholder="Username"><br>
+                    <label for="reservation__form__email">E-mail</label>
+                    <input type="email" id="bookings_form_email" placeholder="E-mail address" class="hide"><br>
+                    <label for="reservation__form__password">Password</label>
+                    <input type="password" id="bookings_form_password" placeholder="Password"><br>
+                    <label for="reservation__form__confirm_password">Confirm password</label>
+                    <input type="password" id="bookings_form_confirm_password" placeholder="Confirm password" class="hide"><br>
+                    <a href="home.html"><button type="button" class="registration-button-cancel">Cancel</button></a>
+                    <button  class="registration-form-button" onclick="password_err()">Continue</button><br>
+                    <p>Already have an account ?</p><a href="login">Login</a>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        var password = document.getElementById("bookings_form_password"),
+            confirm_password = document.getElementById("bookings_form_confirm_password");
+
+        
+        function password_err() {
+
+            if (password == confirm_password) {
+
+                console.log("GREAT");
+                document.write("Aminu is wrong");
+                
+            }else if (password != confirm_password) {
+                console.log("Error");
+                document.write("muhd is right");
+            }
+
+        }
+
+
+    </script>
+
+</body></html>

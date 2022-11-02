@@ -1,0 +1,331 @@
+
+/*       AUNTY JIDDAH CATERING
+==================================
+Aunty Jiddah Ctering @ https://www.auntygiddahcatering.site
+Licenced and active coppyrite Catering service
+© 2020 Aunty Jid'dah. All rights reserved.
+================================== */
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+body {
+    font-family: Lato,sans-serif;
+    background-color: #343a40;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-size: cover;
+}
+.theme::selection {
+    background-color: #f5a637;
+    color: white;
+}
+/*---SCROLL BAR---*/
+::-webkit-scrollbar {
+    height: 15px;
+    width: 15px;
+}
+::-webkit-scrollbar-track {
+    background-color: #f0f0f0;
+}
+::-webkit-scrollbar-thumb {
+    border: 5px solid #f0f0f0;
+    background: #343a40;
+}
+::-webkit-scrollbar-thumb:hover {
+    border: 2.5px solid #f0f0f0;
+}
+::-webkit-scrollbar-thumb:active {
+    background: #f5a637;
+}
+@media screen and (max-width: 550px) {
+    ::-webkit-scrollbar {
+        height: 3px;
+        width: 3px;
+    }
+    ::-webkit-scrollbar-thumb {
+        border: 1px solid #f0f0f0;
+        background: #191c1f;
+    }
+}
+
+/*       NOTIFICATION START
+==================================*/
+/*---PC SETTINGS---*/
+.notification {
+    display: none;
+    position: fixed;
+    left: 20px;
+    top: 160px;
+    z-index: 3;
+}
+.notification-main {
+    padding: 25px 25px 25px 35px;
+    margin: 0 20px 0 0;
+    height: fit-content;
+    width: fit-content;
+    background-color: rgba(255, 255, 255, 0.788);
+    border-top-left-radius: 0;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.notification-main i {
+    padding: 5px;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    border-radius: 100%;
+    color: #f5a637;
+    font-size: 25px;
+    font-weight: 100;
+    text-align: center;
+}
+.notification-main p {
+    color: #151515;
+    font-size: 15px;
+    font-weight: 550;
+    text-transform: uppercase;
+}
+/*       NOTIFICATION END
+==================================*/
+
+/*       NAVBAR START
+==================================*/
+/*---PC SETTINGS---*/
+.navbar {
+    height: 65px;
+    width: 100%;
+    position: fixed;
+    z-index: 4;
+    background-color: white;
+}
+.navbar-main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.navbar-main a {
+    text-decoration: none;
+}
+.nav-btn {
+    padding: 0 30px;
+    color: #151515;
+    font-size: 30px;
+    font-weight: 100;
+    transition: color .3s;
+}
+.nav-btn:hover {
+    color: #f5a637;
+}
+/*       NAVBAR END
+==================================*/
+
+/*       WELCOME START
+==================================*/
+/*---PC SETTINGS---*/
+.welcome {
+    padding: 65px 0 0 0;
+    height: 350px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.500);
+}
+.welcome-main {
+    padding: 100px 0 0 0;
+    height: fit-content;
+    width: 100%;
+}
+.welcome-main p {
+    color: #f0f0f0;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.welcome-text-heading {
+    padding: 10px 0;
+    color: white;
+    font-family: Playfair Display,serif;
+    font-size: 50px;
+    font-weight: 550;
+    text-align: center;
+}
+.welcome-main h2 {
+    color: white;
+    font-family: Playfair Display,serif;
+    font-size: 40px;
+    font-weight: 550;
+    text-align: center;
+}
+/*---MOBILE SETTINGS---*/
+@media screen and (max-width:550px) {
+    .welcome-text-heading {
+        font-size: 35px;
+    }
+    .welcome-main h2 {
+        font-size: 35px;
+    }
+}
+/*       WELCOME END
+==================================*/
+
+/*       PROFILE START
+==================================*/
+/*---PC SETTINGS---*/
+.profile {
+    padding: 0;
+}
+.profile-main {
+    height: fit-content;
+    max-width: 100%;
+    background-color: white;
+}
+.profile-info {
+    padding: 30px;
+    max-width: fit-content;
+}
+.profile-info h2 {
+    padding: 20px 10px 0 10px;
+    color: #343a40;
+    font-family: Playfair Display,serif;
+    font-size: 35px;
+    font-weight: 100;
+}
+.profile-info h3 {
+    padding: 0 10px 20px 10px;
+    color: #343a40;
+    font-size: 15px;
+    font-weight: 100;
+}
+.profile-info td {
+    font-family: Playfair Display,serif;
+    font-size: 25px;
+    font-weight: 100;
+}
+.profile-info p {
+    margin: 5px 0;
+    padding: 10px;
+    background-color: #f7f7f7;
+    color: #5c5c5c;
+    font-family: Lato,sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    letter-spacing: .7px;
+}
+.profile-info a {
+    text-decoration: none;
+}
+.logout-btn {
+    padding: 15px;
+    background-color: transparent;
+    color: #343a40;
+    font-size: 15px;
+    transition: all .3s;
+}
+.logout-btn:hover {
+    color: rgba(245, 166, 55, 0.800);
+}
+.edit-btn {
+    margin: 5px;
+    padding: 15px;
+    border: 1px solid rgba(245, 166, 55, 0.800);
+    background-color: rgba(245, 166, 55, 0.800);
+    color: rgba(33, 37, 41, 0.700);
+    transition: all .3s;
+}
+.edit-btn:hover {
+    background-color: transparent;
+    color: rgba(245, 166, 55, 0.800);
+}
+/*---MOBILE SETTINGS ---*/
+@media screen and (max-width: 550px) {
+    .profile-info {
+        padding: 0;
+    }
+    .table-container {
+        max-width: 90%;
+        overflow: scroll;
+    }
+    .profile-info td {
+        font-size: 18px;
+    }
+    .profile-info p {
+        font-size: 13px;
+    }
+}
+/*       PROFILE END
+==================================*/
+
+/*       PROFILE END
+==================================*/
+/*---PC SETTINGS---*/
+.bookings {
+    padding: 30px;
+    border-top: 1px solid #f5a637;
+    height: fit-content;
+    max-width: 100%;
+    background-color: white;
+}
+.bookings-description {
+    padding: 50px;
+}
+.bookings-description h2 {
+    color: #343a40;
+    font-family: Playfair Display,serif;
+    font-size: 35px;
+    font-weight: 100;
+}
+.bookings-description p {
+    color: #343a40;
+    font-size: 15px;
+    font-weight: 100;
+}
+.bookings-container {
+    height: 500px;
+    overflow: scroll;
+}
+.bookings-table {
+    width: 100%;
+}
+.table-header {
+    background-color: #f0f0f0;
+}
+.table-header th {
+    padding: 10px;
+    color: #5c5c5c;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.bookings-table td {
+    padding: 10px;
+    border-bottom: 1px solid #f5a637;
+    color: #5c5c5c;
+    font-size: 16px;
+    font-weight: 500;
+    overflow: hidden;
+}
+.bookings-table button {
+    height: 40px;
+    width: 100%;
+    border: 1px solid rgba(245, 166, 55, 0.800);
+    background-color: rgba(245, 166, 55, 0.800);
+    color: rgba(33, 37, 41, 0.700);
+    transition: all .3s;
+}
+.bookings-table button:hover {
+    background-color: transparent;
+    color: rgba(245, 166, 55, 0.800);
+}
+/*---MOBILE SETTINGS---*/
+@media screen and (max-width: 550px) {
+    .bookings {
+        padding: 15px;
+    }
+    .bookings-description {
+        padding: 10px;
+    }
+}
+/*       PROFILE END
+==================================*/
